@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TASK 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: yellow;
+        }
+
+        .container {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .form-row {
+            width: 30%;
+            margin-bottom: 10px;
+            justify-content: space-between;
+           
+            flex-direction: row;
+            display: flex;
+        }
+
+        .course {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+        }
+
+        .course .label-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 12px;
+            min-width: 140px;
+        }
+
+        .course-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-row">
+                <div><label for="family-name">Family Name</label></div>
+                <div><input type="text" id="family-name" name="family-name" placeholder="Enter your family name"/></div>
+            </div>
+
+            <div class="form-row">
+                <div><label for="given-name">Given Name</label></div>
+                <div><input type="text" id="given-name" name="given-name" placeholder="Enter your given name"/></div>
+            </div>
+
+            <div class="form-row">
+                <div><label for="email">Email</label></div>
+                <div><input type="email" id="email" name="email" placeholder="Enter your email"/></div>
+            </div>
+
+            <div class="form-row">
+                <div><label for="suburb">Suburb</label></div>
+                <div><input type="text" id="suburb" name="suburb" placeholder="Enter your suburb"/></div>
+            </div>
+
+            <div class="form-row">
+                <div><label for="state">State</label></div>
+                <div><input type="text" id="state" name="state" placeholder="Enter your state"/></div>
+            </div>
+
+            
+            <div class="course">
+                <div class="label-column">
+                    <label for="postcode">Course info On</label>
+                </div>
+
+                <div class="course-info">
+                    <div>
+                        <input type="checkbox" id="course-engineering" name="courses" value="engineering" />
+                        <label for="course-engineering">Engineering</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="course-it" name="courses" value="it" />
+                        <label for="course-it">IT</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="course-law" name="courses" value="law" />
+                        <label for="course-law">Law</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="course-education" name="courses" value="education" />
+                        <label for="course-education">Education</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="course-medicine" name="courses" value="medicine" />
+                        <label for="course-medicine">Medicine</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="course-nursing" name="courses" value="nursing" />
+                        <label for="course-nursing">Nursing</label>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+            <div class="course">
+                <div class="label-column">
+                    <label for="postcode">Degree</label>
+                </div>
+
+                <div class="course-info">
+                    <div>
+                        <input type="radio" id="course-engineering" name="courses" value="engineering" />
+                        <label for="course-engineering">Diploma</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="course-it" name="courses" value="it" />
+                        <label for="course-it">Degree</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="course-it" name="courses" value="it" />
+                        <label for="course-it">Honours</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="course-education" name="courses" value="education" />
+                        <label for="course-education">Education</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="course-medicine" name="courses" value="medicine" />
+                        <label for="course-medicine">Masters</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="course-nursing" name="courses" value="nursing" />
+                        <label for="course-nursing">PHD</label>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <div style="margin-right: 5px;">
+                    <label for="comment">comment</label>
+                </div>
+                <div>
+                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

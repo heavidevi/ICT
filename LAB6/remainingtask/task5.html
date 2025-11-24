@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 2px solid #333;
+            padding: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .time-slot {
+            background-color: #E3F2FD;
+            font-weight: bold;
+            color: #1565C0;
+            width: 120px;
+        }
+
+        .monday {
+            background-color: #FFEBEE;
+            color: #C62828;
+        }
+
+        .tuesday {
+            background-color: #E8F5E8;
+            color: #2E7D32;
+        }
+
+        .wednesday {
+            background-color: #FFF3E0;
+            color: #E65100;
+        }
+
+        .thursday {
+            background-color: #F3E5F5;
+            color: #7B1FA2;
+        }
+
+        .friday {
+            background-color: #E0F2F1;
+            color: #00695C;
+        }
+
+        .break {
+            background-color: #FFCDD2;
+            color: #D32F2F;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .lunch {
+            background-color: #FFE0B2;
+            color: #F57C00;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        td:hover {
+            background-color: #FFFDE7;
+            cursor: pointer;
+            transform: scale(1.02);
+            transition: all 0.2s ease;
+        }
+
+        .subject {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .teacher {
+            font-size: 11px;
+            color: #666;
+        }
+
+        .room {
+            font-size: 10px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Class Timetable - Week Schedule</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time-slot">08:00 - 08:50</td>
+                    <td class="monday">
+                        <div class="subject">Mathematics</div>
+                        <div class="teacher">Mr. Ahmed</div>
+                        <div class="room">Room 101</div>
+                    </td>
+                    <td class="tuesday">
+                        <div class="subject">English</div>
+                        <div class="teacher">Ms. Sarah</div>
+                        <div class="room">Room 205</div>
+                    </td>
+                    <td class="wednesday">
+                        <div class="subject">Physics</div>
+                        <div class="teacher">Dr. Khan</div>
+                        <div class="room">Lab 301</div>
+                    </td>
+                    <td class="thursday">
+                        <div class="subject">Chemistry</div>
+                        <div class="teacher">Prof. Ali</div>
+                        <div class="room">Lab 302</div>
+                    </td>
+                    <td class="friday">
+                        <div class="subject">Biology</div>
+                        <div class="teacher">Ms. Fatima</div>
+                        <div class="room">Lab 303</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="time-slot">09:00 - 09:50</td>
+                    <td class="monday">
+                        <div class="subject">English</div>
+                        <div class="teacher">Ms. Sarah</div>
+                        <div class="room">Room 205</div>
+                    </td>
+                    <td class="tuesday">
+                        <div class="subject">Mathematics</div>
+                        <div class="teacher">Mr. Ahmed</div>
+                        <div class="room">Room 101</div>
+                    </td>
+                    <td class="wednesday">
+                        <div class="subject">Computer Science</div>
+                        <div class="teacher">Mr. Hassan</div>
+                        <div class="room">Lab 401</div>
+                    </td>
+                    <td class="thursday">
+                        <div class="subject">History</div>
+                        <div class="teacher">Ms. Noor</div>
+                        <div class="room">Room 108</div>
+                    </td>
+                    <td class="friday">
+                        <div class="subject">Mathematics</div>
+                        <div class="teacher">Mr. Ahmed</div>
+                        <div class="room">Room 101</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="time-slot">10:00 - 10:15</td>
+                    <td colspan="5" class="break">MORNING BREAK</td>
+                </tr>
+
+                <tr>
+                    <td class="time-slot">10:15 - 11:05</td>
+                    <td class="monday">
+                        <div class="subject">Physics</div>
+                        <div class="teacher">Dr. Khan</div>
+                        <div class="room">Lab 301</div>
+                    </td>
+                    <td class="tuesday">
+                        <div class="subject">Chemistry</div>
+                        <div class="teacher">Prof. Ali</div>
+                        <div class="room">Lab 302</div>
+                    </td>
+                    <td class="wednesday">
+                        <div class="subject">Mathematics</div>
+                        <div class="teacher">Mr. Ahmed</div>
+                        <div class="room">Room 101</div>
+                    </td>
+                    <td class="thursday">
+                        <div class="subject">English</div>
+                        <div class="teacher">Ms. Sarah</div>
+                        <div class="room">Room 205</div>
+                    </td>
+                    <td class="friday">
+                        <div class="subject">Physics</div>
+                        <div class="teacher">Dr. Khan</div>
+                        <div class="room">Lab 301</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="time-slot">11:15 - 12:05</td>
+                    <td class="monday">
+                        <div class="subject">Chemistry</div>
+                        <div class="teacher">Prof. Ali</div>
+                        <div class="room">Lab 302</div>
+                    </td>
+                    <td class="tuesday">
+                        <div class="subject">Biology</div>
+                        <div class="teacher">Ms. Fatima</div>
+                        <div class="room">Lab 303</div>
+                    </td>
+                    <td class="wednesday">
+                        <div class="subject">English</div>
+                        <div class="teacher">Ms. Sarah</div>
+                        <div class="room">Room 205</div>
+                    </td>
+                    <td class="thursday">
+                        <div class="subject">Computer Science</div>
+                        <div class="teacher">Mr. Hassan</div>
+                        <div class="room">Lab 401</div>
+                    </td>
+                    <td class="friday">
+                        <div class="subject">Geography</div>
+                        <div class="teacher">Mr. Tariq</div>
+                        <div class="room">Room 107</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="time-slot">12:15 - 01:05</td>
+                    <td class="monday">
+                        <div class="subject">History</div>
+                        <div class="teacher">Ms. Noor</div>
+                        <div class="room">Room 108</div>
+                    </td>
+                    <td class="tuesday">
+                        <div class="subject">Geography</div>
+                        <div class="teacher">Mr. Tariq</div>
+                        <div class="room">Room 107</div>
+                    </td>
+                    <td class="wednesday">
+                        <div class="subject">Biology</div>
+                        <div class="teacher">Ms. Fatima</div>
+                        <div class="room">Lab 303</div>
+                    </td>
+                    <td class="thursday">
+                        <div class="subject">Mathematics</div>
+                        <div class="teacher">Mr. Ahmed</div>
+                        <div class="room">Room 101</div>
+                    </td>
+                    <td class="friday">
+                        <div class="subject">Computer Science</div>
+                        <div class="teacher">Mr. Hassan</div>
+                        <div class="room">Lab 401</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="time-slot">01:05 - 02:00</td>
+                    <td colspan="5" class="lunch">LUNCH BREAK</td>
+                </tr>
+
+                <tr>
+                    <td class="time-slot">02:00 - 02:50</td>
+                    <td class="monday">
+                        <div class="subject">Computer Science</div>
+                        <div class="teacher">Mr. Hassan</div>
+                        <div class="room">Lab 401</div>
+                    </td>
+                    <td class="tuesday">
+                        <div class="subject">Physics</div>
+                        <div class="teacher">Dr. Khan</div>
+                        <div class="room">Lab 301</div>
+                    </td>
+                    <td class="wednesday">
+                        <div class="subject">History</div>
+                        <div class="teacher">Ms. Noor</div>
+                        <div class="room">Room 108</div>
+                    </td>
+                    <td class="thursday">
+                        <div class="subject">Geography</div>
+                        <div class="teacher">Mr. Tariq</div>
+                        <div class="room">Room 107</div>
+                    </td>
+                    <td class="friday">
+                        <div class="subject">English</div>
+                        <div class="teacher">Ms. Sarah</div>
+                        <div class="room">Room 205</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="time-slot">03:00 - 03:50</td>
+                    <td class="monday">
+                        <div class="subject">Geography</div>
+                        <div class="teacher">Mr. Tariq</div>
+                        <div class="room">Room 107</div>
+                    </td>
+                    <td class="tuesday">
+                        <div class="subject">Computer Science</div>
+                        <div class="teacher">Mr. Hassan</div>
+                        <div class="room">Lab 401</div>
+                    </td>
+                    <td class="wednesday">
+                        <div class="subject">Geography</div>
+                        <div class="teacher">Mr. Tariq</div>
+                        <div class="room">Room 107</div>
+                    </td>
+                    <td class="thursday">
+                        <div class="subject">Biology</div>
+                        <div class="teacher">Ms. Fatima</div>
+                        <div class="room">Lab 303</div>
+                    </td>
+                    <td class="friday">
+                        <div class="subject">Chemistry</div>
+                        <div class="teacher">Prof. Ali</div>
+                        <div class="room">Lab 302</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

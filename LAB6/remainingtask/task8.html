@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8 - Favorite Animals</title>
+    <style>
+        body {
+            background-color: lightgreen;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkgreen;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .animals {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .animal {
+            background-color: white;
+            border: 3px solid darkgreen;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .animal img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid gray;
+        }
+
+        .animal p {
+            color: darkblue;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Favorite Animals</h1>
+        
+        <div class="animals">
+            <div class="animal">
+                <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop" alt="Cat">
+                <p>Cat</p>
+            </div>
+            
+            <div class="animal">
+                <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400&h=400&fit=crop" alt="Dog">
+                <p>Dog</p>
+            </div>
+            
+            <div class="animal">
+                <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=400&fit=crop" alt="Lion">
+                <p>Lion</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

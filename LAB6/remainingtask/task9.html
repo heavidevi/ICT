@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 9</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .layout{
+            display:flex ;
+            background-color: green;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            height: 10vh;
+            align-items: center;
+        }
+        .content{
+            display:flex ;
+            height: 80vh;
+            text-align: center;
+            justify-content: center;
+            color:blue;    
+            align-items: center;
+
+        }
+
+    </style>
+    <div class="layout">
+        <header>This is header</header>
+    </div>
+   <div style="display: flex; flex-direction: row;">
+        <div class="content" style="width: 20%; background-color: rgb(254, 0, 254);"> 
+            Left <br> content
+        </div>
+        <div class="content" style="width: 50%; background-color: red;">
+            Center content
+        </div>
+        <div class="content" style="width: 30%;background-color: rgb(157, 250, 157);">
+            Right content
+        </div>
+   </div>
+    <div class="layout">
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
